@@ -209,7 +209,7 @@
         <p class="subtitle">Catch Pokémon in Minecraft</p>
 
         <div class="status">✓ Ready to Download</div>
-        <div class="status" style="background: rgba(255, 152, 0, 0.2); border-color: rgba(255, 152, 0, 0.5); color: #ffa500; margin-top: 8px;">🆕 Version 1.0.5 Beta</div>
+        <div class="status" style="background: rgba(255, 152, 0, 0.2); border-color: rgba(255, 152, 0, 0.5); color: #ffa500; margin-top: 8px;">⚡ UPDATE 1.0.6</div>
 
         <div class="info-box">
             <strong>What You Get:</strong>
@@ -217,12 +217,14 @@
         </div>
 
         <div class="info-box" style="margin-top: 16px;">
-            <strong>Latest Update (1.0.5 Beta):</strong>
+            <strong>Latest Update 1.0.6:</strong>
             <ul style="text-align: left; margin: 10px 0 0 0; padding-left: 0; list-style: none; font-size: 12px;">
-                <li style="padding: 4px 0;">✨ More Cosmetics - Customize your look!</li>
-                <li style="padding: 4px 0;">✨ Elytra Slot - Easier gliding management</li>
-                <li style="padding: 4px 0;">✨ Emotes - Now you can hit the Griddy on people!</li>
-                <li style="padding: 4px 0;">✨ Other QOL Improvements</li>
+                <li style="padding: 4px 0;">▪ Custom Hats - Customize your head with new hat styles!</li>
+                <li style="padding: 4px 0;">▪ Aircraft - A bunch of rustic aircraft to travel, transport, and explore! Vanilla-faithful with lots of details and functionalities.</li>
+                <li style="padding: 4px 0;">▪ Rustic Machinery - Transport, mine, and automate things while staying close to vanilla style.</li>
+                <li style="padding: 4px 0;">▪ Auto Crop Replanting - Crops harvested with seeds will automatically replant! (Hoe must be held for replanting to occur)</li>
+                <li style="padding: 4px 0;">▪ Chunk Loader - Finally added (stop asking me about it now!)</li>
+                <li style="padding: 4px 0;">▪ And much more!</li>
             </ul>
         </div>
 
@@ -234,7 +236,11 @@
         </ul>
 
         <button class="btn-download" id="downloadBtn">
-            📥 Download Modpack
+            📥 Download Standard
+        </button>
+
+        <button class="btn-download" id="downloadBtnLowEnd" style="background: linear-gradient(135deg, #ff9500 0%, #ff7a00 100%); box-shadow: 0 8px 20px rgba(255, 149, 0, 0.3);">
+            📥 Download Low-End Version
         </button>
 
         <div class="footer">
@@ -245,7 +251,12 @@
     <script>
         // Made by Koyee
         document.getElementById('downloadBtn').addEventListener('click', function() {
-            const modpackUrl = 'https://www.dropbox.com/scl/fi/rlc57btdopwsdmwtqjr3o/ForFunMC-COBBLEVERSE-1.0.5-Beta-FPS-Fix.mrpack?rlkey=z3ywk5qhqt9tihl51z18oe1hf&st=mzwob1fi&dl=1';
+            const modpackUrl = 'https://www.dropbox.com/scl/fi/kl92w4zpq73nh29lvb66n/ForFunMC-COBBLEVERSE-1.0.6.mrpack?rlkey=x3lc79xnirid0nknadwv71p1g&st=ux6l7fbx&dl=1';
+            window.location.href = modpackUrl;
+        });
+
+        document.getElementById('downloadBtnLowEnd').addEventListener('click', function() {
+            const modpackUrl = 'https://www.dropbox.com/scl/fi/tce19vmyzaxw4zzogs1xu/ForFunMC-COBBLEVERSE-LOW-END-1.0.6-LE.mrpack?rlkey=wj29k497nj5h4nswxnxim0k0m&st=qdsk90jd&dl=1';
             window.location.href = modpackUrl;
         });
     </script>
