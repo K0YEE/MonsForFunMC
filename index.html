@@ -129,24 +129,13 @@
             transform: translateY(0);
         }
 
-        .btn-secondary {
-            display: inline-block;
-            width: 100%;
-            padding: 12px 24px;
-            background: rgba(50, 184, 198, 0.15);
-            color: var(--color-primary);
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 500;
-            font-size: 13px;
-            cursor: pointer;
-            border: 1px solid rgba(50, 184, 198, 0.3);
-            transition: all 0.3s ease;
+        .btn-low-end {
+            background: linear-gradient(135deg, #ff9500 0%, #ff7a00 100%);
+            box-shadow: 0 8px 20px rgba(255, 149, 0, 0.3);
         }
 
-        .btn-secondary:hover {
-            background: rgba(50, 184, 198, 0.25);
-            border-color: rgba(50, 184, 198, 0.5);
+        .btn-low-end:hover {
+            background: linear-gradient(135deg, #ff7a00 0%, #ff6a00 100%);
         }
 
         .footer {
@@ -217,7 +206,7 @@
         </div>
 
         <div class="info-box" style="margin-top: 16px;">
-            <strong>Latest Update 1.0.6:</strong>
+            <strong>✨ NEW FEATURES:</strong>
             <ul style="text-align: left; margin: 10px 0 0 0; padding-left: 0; list-style: none; font-size: 12px;">
                 <li style="padding: 4px 0;">▪ Custom Hats - Customize your head with new hat styles!</li>
                 <li style="padding: 4px 0;">▪ Aircraft - A bunch of rustic aircraft to travel, transport, and explore! Vanilla-faithful with lots of details and functionalities.</li>
@@ -239,7 +228,7 @@
             📥 Download Standard
         </button>
 
-        <button class="btn-download" id="downloadBtnLowEnd" style="background: linear-gradient(135deg, #ff9500 0%, #ff7a00 100%); box-shadow: 0 8px 20px rgba(255, 149, 0, 0.3);">
+        <button class="btn-download btn-low-end" id="downloadBtnLowEnd">
             📥 Download Low-End Version
         </button>
 
@@ -251,12 +240,12 @@
     <script>
         // Made by Koyee
         document.getElementById('downloadBtn').addEventListener('click', function() {
-            const modpackUrl = 'https://www.dropbox.com/scl/fi/kl92w4zpq73nh29lvb66n/ForFunMC-COBBLEVERSE-1.0.6.mrpack?rlkey=x3lc79xnirid0nknadwv71p1g&st=ux6l7fbx&dl=1';
+            const modpackUrl = 'https://www.dropbox.com/scl/fi/kl92w4zpq73nh29lvb66n/ForFunMC-COBBLEVERSE-1.0.6.mrpack?rlkey=x3lc79xnirid0nknadwv71p1g&st=767eez61&dl=1';
             window.location.href = modpackUrl;
         });
 
         document.getElementById('downloadBtnLowEnd').addEventListener('click', function() {
-            const modpackUrl = 'https://www.dropbox.com/scl/fi/tce19vmyzaxw4zzogs1xu/ForFunMC-COBBLEVERSE-LOW-END-1.0.6-LE.mrpack?rlkey=wj29k497nj5h4nswxnxim0k0m&st=qdsk90jd&dl=1';
+            const modpackUrl = 'https://www.dropbox.com/scl/fi/tce19vmyzaxw4zzogs1xu/ForFunMC-COBBLEVERSE-LOW-END-1.0.6-LE.mrpack?rlkey=wj29k497nj5h4nswxnxim0k0m&st=ipsnmgiv&dl=1';
             window.location.href = modpackUrl;
         });
     </script>
